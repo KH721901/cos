@@ -6,7 +6,7 @@ body {
 
 /* ロゴ */
 .logo {
-  width: 150px;
+  width: 100px;
   height: auto;
   margin: 5px;
   z-index: 1000;
@@ -18,7 +18,7 @@ body {
 }
 
 .logo2 {
-  width: 150px;
+  width: 100px;
   height: auto;
   margin: 5px;
   z-index: 1000;
@@ -48,7 +48,7 @@ body {
 }
   
 .menu-image {
-  width: 70px;
+  width: 50px;
   height: auto;
   margin: 20px;
   filter: invert(100%); /* 色を反転して白にする */
@@ -58,8 +58,8 @@ body {
 .menu {
   position: fixed;
   top: 0;
-  right: -1250px; /* 初期状態は画面外 */
-  width: 1250px;
+  right: -1000px; /* 初期状態は画面外 */
+  width: 1000px;
   height: 100%;
   background-color: #f3f3f3;
   box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
