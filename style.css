@@ -1,0 +1,204 @@
+/* リセット */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ロゴ */
+.logo {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+  z-index: 1000;
+  position: fixed; /* ロゴをメイン画像の上に配置 */
+  top: 20px; /* ロゴの位置を調整 */
+  left: 20px; /* ロゴの位置を調整 */
+  filter: invert(100%); /* 色を反転して白にする */
+  cursor: pointer;
+}
+
+.logo2 {
+  width: 100px;
+  height: auto;
+  margin: 5px;
+  z-index: 1000;
+  position: absolute; /* ロゴをメイン画像の上に配置 */
+  top: 20px; /* ロゴの位置を調整 */
+  left: 20px; /* ロゴの位置を調整 */
+  cursor: pointer;
+}
+  
+/* メイン画像 */
+.mainpic {
+  width: 100%;
+  height: auto;
+  margin: 0;
+  z-index: -1;
+  position: relative; /* メイン画像の位置を調整 */
+  cursor: pointer;
+}
+                                                                                                                  
+/* ハンバーガーメニューアイコン */
+.menu-icon {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 1000;
+}
+  
+.menu-image {
+  width: 50px;
+  height: auto;
+  margin: 20px;
+  filter: invert(100%); /* 色を反転して白にする */
+}
+
+/* メニュー（デフォルト非表示） */
+.menu {
+  position: fixed;
+  top: 0;
+  right: -1000px; /* 初期状態は画面外 */
+  width: 1000px;
+  height: 100%;
+  background-color: #f3f3f3;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  padding-top: 200px;
+  transition: right 0.3s ease-in-out;
+}
+
+/* メニュー表示時 */
+.menu.open {
+  right: 0;
+}
+
+/* メニューリンク */
+.menu a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu a:hover {
+  background-color: #f0f0f0;
+}
+
+.sns img{
+  width: 25px;
+}
+
+.sns {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin: 60px 20px;
+  align-items: center;
+}
+
+.sns p {
+  margin-right: 150px; /* 右に空白を追加 */
+}
+  
+.sns a img {
+  margin-left: 20px; /* 左に空白を追加 */
+}
+
+.off {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sns2 img{
+  width: 25px;
+}
+
+.sns2 {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  margin: 60px 20px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.sns2 p {
+  margin-right: 150px; /* 右に空白を追加 */
+}
+  
+.sns2 a img {
+  margin-left: 20px; /* 左に空白を追加 */
+}
+
+.off2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.news-inner {
+  display: flex;
+  justify-content: space-between;
+  padding: 6rem 3rem 4rem;
+  background-color: #525252;
+}
+
+.item {
+  margin: 20px;
+  text-align: center;
+}
+
+#news-h {
+  text-align: center;
+  font-weight: 200; 
+}
+
+#pro-h {
+  text-align: center;
+  font-weight: 200; 
+}
+
+.cos-inner {
+  display: flex;
+  justify-content: space-around;
+  margin: 100px;
+}
+
+.pro-inner {
+  display: flex;
+  justify-content: space-around;
+  padding: 6rem 3rem 4rem;
+}
+
+.pro-inner2 {
+  display: flex;
+  justify-content: space-around;
+  padding: 6rem 3rem 4rem;
+
+}
+
+#bra-h {
+  text-align: center;
+  font-weight: 200;
+  font-size: 30px; 
+}
+
+.brand {
+  text-align: center;
+  font-size: 20px;
+  background-color: #d6b6a9;
+  padding: 130px;
+}
+
+.pic-inner {
+  display: flex;
+  justify-content: space-around;
+  padding: 130px;
+  background-color: #d6b6a9;
+}
+
+
+.footer {
+  background-color: #525252;
+  padding: 20px; /* フッター内の余白を設定 */
+  }
+
