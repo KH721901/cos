@@ -157,15 +157,20 @@ body {
 .item {
   font-size: 13px;
   flex-direction: column;
-align-items: center; /* 子要素を中央に揃える */
-justify-content: center; /* 子要素を中央に揃える */
-text-align: center; /* テキストを中央に揃える */
-padding: 10px;
+  align-items: center; /* 子要素を中央に揃える */
+  justify-content: center; /* 子要素を中央に揃える */
+  text-align: center; /* テキストを中央に揃える */
+  padding: 10px;
+  cursor: pointer;
 }
 
 .item p {
   margin: 0;
   text-align: center; /* テキストを中央に揃える */
+}
+
+.item:hover p {
+  color: #E48091;
 }
 
 .news-image {
@@ -397,6 +402,17 @@ padding: 10px;
   margin: 0;
 }
 
+.item1:hover {
+  background-color: #ffffff; /* ホバー時の背景色 */
+  color: #E48091; /* ホバー時のテキストの色 */
+  }
+  
+  .item1:hover .makeimg1 {
+    width: 250px; /* 右側250pxのみ */
+    color: rgba(255, 255, 255, 0.025); /* ホバー時の透明度50%の白色 */
+    mix-blend-mode: lighten; /* 画像に白色を重ねるためのモード */
+    }
+
 .item1 p {
   display: inline-block;
   margin: 20px;
@@ -423,6 +439,12 @@ padding: 10px;
   font-size: 24px; /* テキストのサイズ */
   border: 1px solid #E48091; /* 四角の枠線 */
 }
+
+.item1:hover::before {
+  background-color: #ffffff; /* ホバー時の背景色 */
+  color: #E48091; /* ホバー時のテキストの色 */
+  border: 1px solid #ffffff; /* ホバー時の枠線 */
+  }
 
 .item2 {
   display: flex;
