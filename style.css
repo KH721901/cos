@@ -27,6 +27,17 @@ body {
   left: 20px; /* ロゴの位置を調整 */
   cursor: pointer;
 }
+
+.logo3 {
+  width: 100px;
+  height: auto;
+  margin: 0 0 0 100px;
+  z-index: 1000;
+  top: 30px; /* ロゴの位置を調整 */
+  left: 20px; /* ロゴの位置を調整 */
+  filter: invert(100%); /* 色を反転して白にする */
+  cursor: pointer;
+}
   
 /* メイン画像 */
 .mainpic {
@@ -139,66 +150,487 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 6rem 3rem 4rem;
+  margin: 80px 0 140px 0;
   background-color: #525252;
 }
 
 .item {
+  font-size: 13px;
+  flex-direction: column;
+  align-items: center; /* 子要素を中央に揃える */
+  justify-content: center; /* 子要素を中央に揃える */
+  text-align: center; /* テキストを中央に揃える */
+  padding: 10px;
+  cursor: pointer;
+}
+
+.item p {
+  margin: 0;
+  text-align: center; /* テキストを中央に揃える */
+}
+
+.item:hover p {
+  color: #E48091;
+}
+
+.news-image {
+  width: 170px;
+  height: auto;
   margin: 20px;
-  text-align: center;
 }
 
 #news-h {
   text-align: center;
-  font-weight: 200; 
+  font-weight: 200;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+#news-h::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 80px; /* 縦線の長さ */
+  border-left: 2px solid #E48091; /* 縦線の太さと色 */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  margin: 40px 0 40px 0;
+  z-index: 10;
 }
 
 #pro-h {
   text-align: center;
-  font-weight: 200; 
+  font-weight: 200;
+  position: relative;
+  margin-bottom: 25px; 
 }
 
-.cos-inner {
-  display: flex;
-  justify-content: space-around;
-  margin: 100px;
+#pro-h::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 80px; /* 縦線の長さ */
+  border-left: 2px solid #E48091; /* 縦線の太さと色 */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  margin: 40px 0 40px 0;
+}
+
+.cos-img {
+  width: 100%;
+  margin: 50px 0 0 0;
 }
 
 .pro-inner {
   display: flex;
-  justify-content: space-around;
-  padding: 6rem 3rem 4rem;
+  justify-content: center;
+  text-align: center;
 }
 
 .pro-inner2 {
   display: flex;
-  justify-content: space-around;
-  padding: 6rem 3rem 4rem;
+  justify-content: center;
+  text-align: center;
+}
 
+.pro-image {
+  width: 90%;
+  max-width: 200px;
+  margin: 15px 30px 0 30px;
+}
+
+.pro-image2 {
+  width: 100%;
+  max-width: 200px;
+  margin: 15px 30px 0 30px;
 }
 
 #bra-h {
   text-align: center;
-  font-weight: 200;
-  font-size: 30px; 
+  font-weight: 1000;
+  position: relative;
+  font-size: 25px; 
+}
+
+#bra-h::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 80px; /* 縦線の長さ */
+  border-left: 2px solid #E48091; /* 縦線の太さと色 */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  margin: 40px 0 40px 0;
 }
 
 .brand {
   text-align: center;
   font-size: 20px;
   background-color: #d6b6a9;
-  padding: 130px;
+  padding: 100px 0 20px 0;
+  margin: 80px 0 0 0;
+  font-family: serif;
+}
+
+.more-container {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+  
+.plus-sign {
+  position: absolute;
+  top: -20px; /* MOREの上に配置 */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+}
+  
+.plus-sign::before,
+.plus-sign::after {
+  content: '';
+  position: absolute;
+  background-color: #E48091; /* 線の色を指定 */
+}
+  
+.plus-sign::before {
+  width: 2.5px;
+  height: 30px;
+  left: 9px;
+}
+  
+.plus-sign::after {
+  width: 30px;
+  height: 2.5px;
+  top: 14px;
+  left: -4px;
+}
+
+.logo-textimg {
+  width: 250px
+}
+
+.logo-text {
+  margin: 150px;
+}
+
+.logo-text p{
+  font-family: serif;
+  font-weight: 1000;
+  font-size: 25px;
+  margin: 0;
+}
+
+.pic {
+  background-color: #d6b6a9;
 }
 
 .pic-inner {
   display: flex;
   justify-content: space-around;
   padding: 130px;
-  background-color: #d6b6a9;
+  background-color: rgba(255, 255, 255, 0.25);
+}
+
+.pic-image {
+  width: 250px;
+}
+
+#make-h {
+  text-align: center;
+  font-weight: 200;
+  margin: 100px;
+  position: relative;
+  margin-bottom: 20px; 
+}
+
+#make-h::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 80px; /* 縦線の長さ */
+  border-left: 2px solid #E48091; /* 縦線の太さと色 */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 100%;
+  margin: 40px 0 40px 0;
+  z-index: 10;
+}
+
+.makeup {
+  display: flex;
+  justify-content: center;
+  background-color: #e9e9e9;
+  margin: 80px 0;
+}
+
+.makeimg1 {
+  width: 50%;
+  margin-left: 140px;
+  display: block;
+}
+
+.makeimg2 {
+  width: 50%;
+  display: block;
+}
+
+.makeimg3 {
+  width: 50%;
+  margin-left: 139px;
+  display: block;
+}
+
+.makeimg4 {
+  width: 50%;
+  display: block;
+}
+
+.item1 {
+  display: flex;
+  position: relative; 
+  width: 500px;
+  background-color: #CC9088;
+  margin: 0;
+}
+
+.item1:hover {
+  background-color: #ffffff; /* ホバー時の背景色 */
+  color: #E48091; /* ホバー時のテキストの色 */
+  }
+  
+  .item1:hover .makeimg1 {
+    width: 250px; /* 右側250pxのみ */
+    color: rgba(255, 255, 255, 0.025); /* ホバー時の透明度50%の白色 */
+    mix-blend-mode: lighten; /* 画像に白色を重ねるためのモード */
+    }
+
+.item1 p {
+  display: inline-block;
+  margin: 20px;
+  white-space: nowrap;
+  color: #ffffff; 
+}
+
+.large-letter {
+  font-size: 1.5em; /* 文字を大きくする */
+}
+
+.item1::before {
+  content: '>';
+  position: absolute;
+  top: 0; /* 四角の中に収まるように調整 */
+  left:219px; /* 四角の中に収まるように調整 */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E48091; /* 四角の背景色 */
+  color: #ffffff; /* テキストの色 */
+  font-size: 24px; /* テキストのサイズ */
+  border: 1px solid #E48091; /* 四角の枠線 */
+}
+
+.item1:hover::before {
+  background-color: #ffffff; /* ホバー時の背景色 */
+  color: #E48091; /* ホバー時のテキストの色 */
+  border: 1px solid #ffffff; /* ホバー時の枠線 */
+  }
+
+.item2 {
+  display: flex;
+  position: relative;
+  width: 500px;
+  background-color: #A5786B;
+  margin: 0;
+  align-items: flex-end; /* 垂直方向の下に揃える */
+}
+
+.item2 p {
+  display: inline-block;
+  margin: 20px;
+  white-space: nowrap;
+  color: #ffffff;
+  position: absolute; /* 絶対位置指定 */
+  bottom: 0; /* 下に配置 */
+  right: 0; /* 右に配置 */ 
+}
+
+.item2::before {
+  content: '>';
+  position: absolute;
+  top: 0; /* 四角の中に収まるように調整 */
+  left:469px; /* 四角の中に収まるように調整 */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E48091; /* 四角の背景色 */
+  color: #ffffff; /* テキストの色 */
+  font-size: 24px; /* テキストのサイズ */
+  border: 1px solid #E48091; /* 四角の枠線 */
+}
+
+.item3 {
+  display: flex;
+  position: relative;
+  width: 500px;
+  background-color: #B49178;
+  margin: 100px 0 0;  
+}
+
+.item3 p {
+  display: inline-block;
+  margin: 20px;
+  white-space: nowrap;
+  color: #ffffff; 
+}
+
+.item3::before {
+  content: '>';
+  position: absolute;
+  top: 0; /* 四角の中に収まるように調整 */
+  left:219px; /* 四角の中に収まるように調整 */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E48091; /* 四角の背景色 */
+  color: #ffffff; /* テキストの色 */
+  font-size: 24px; /* テキストのサイズ */
+  border: 1px solid #E48091; /* 四角の枠線 */
+}
+
+.item4 {
+  display: flex;
+  position: relative;
+  width: 500px;
+  background-color: #897070;
+  margin: 0;
+  align-items: flex-end; /* 垂直方向の下に揃える */
+}
+
+.item4 p {
+  display: inline-block;
+  margin: 20px;
+  white-space: nowrap;
+  color: #ffffff;
+  position: absolute; /* 絶対位置指定 */
+  bottom: 0; /* 下に配置 */
+  right: 0; /* 右に配置 */ 
+}
+
+.item4::before {
+  content: '>';
+  position: absolute;
+  top: 0; /* 四角の中に収まるように調整 */
+  left:469px; /* 四角の中に収まるように調整 */
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #E48091; /* 四角の背景色 */
+  color: #ffffff; /* テキストの色 */
+  font-size: 24px; /* テキストのサイズ */
+  border: 1px solid #E48091; /* 四角の枠線 */
 }
 
 
 .footer {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
   background-color: #525252;
   padding: 20px; /* フッター内の余白を設定 */
+  color: #ffffff; 
+}
+
+#footer-logo {
+  align-self: flex-start; /* ロゴを上寄せ */
+  margin-right: 20px;
+}
+
+#footer-link {
+  display: flex;
+}
+  
+.column {
+  margin-right: 20px;
+  margin: 40px 30px 40px 30px ;
+}
+  
+.column a {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff; /* リンクテキストを白に設定 */
+  text-decoration: none; /* リンクの下線を削除 */
+}
+
+.footer p {
+align-self: flex-end; /* コピーライトを下寄せ */
+margin-left: 20px;
+color: #ffffff;
+}
+
+/* スクロールバー風のスタイル */
+.slick-slider {
+  position: relative;
+  }
+  
+  .slick-list {
+  overflow: hidden;
+  }
+  
+  .slick-track {
+  display: flex;
+  }
+  
+  .slick-scrollbar {
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 100%;
+  height: 7px; /* Google風に薄く */
+  background-color: transparent; /* 背景を透明に */
+  cursor: pointer;
+  }
+  
+  .slick-scrollbar-thumb {
+  height: 100%;
+  background-color: #ccc; /* Google風の色 */
+  border-radius: 4px; /* 角を丸く */
+  width: 20%; /* 初期の幅を設定 */
+  transition: transform 0.4s ease; /* トランジションを追加 */
+  cursor: pointer;
   }
 
+  .slick-prev, .slick-next {
+    background-color: #fff;
+    border: none;
+    font-size: 24px;
+    line-height: 1;
+    opacity: 0.75;
+    transition: opacity 0.3s;
+    z-index: 1;
+    }
+    
+    .slick-prev:hover, .slick-next:hover {
+    opacity: 1;
+    }
+    
+    .pic-image {
+    width: 100%;
+    height: auto;
+    }
